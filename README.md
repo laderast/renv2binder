@@ -49,3 +49,6 @@ renv_to_install_r(lockfile,file_out="./install.R")
 ```
 
     File is created as install.R
+
+Now you can check in the `install.R` or `DESCRIPTION` file into your
+repo and it is now Binder ready!
