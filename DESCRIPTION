@@ -1,0 +1,21 @@
+Package: renv2binder
+Title: Converts renv lockfiles to binder friendly formats
+Version: 0.0.0.9000
+Authors@R: 
+    person("Ted", "Laderas",email="tladera2@fredhutch.org", role = c("cre", "aut"))
+Description: |
+    Renv is a powerful tool for package management, but it is not compatible with tools such as binder, which need either an install.R or DESCRIPTION file to be generated to install the correct packages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports: 
+    cli,
+    purrr,
+    renv
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
