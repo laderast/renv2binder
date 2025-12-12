@@ -28,7 +28,8 @@ repository.
 You can install the development version of renv2binder like so:
 
 ``` r
-pak::pak_install("laderast/renv2binder")
+install.packages("pak")
+pak::pkg_install("laderast/renv2binder")
 ```
 
 ## Example
