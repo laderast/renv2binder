@@ -44,6 +44,14 @@ make_snapshot <- function(path="."){
 
 }
 
+#' Title
+#'
+#' @param path
+#'
+#' @returns
+#'
+#' @export
+#' @examples
 load_renv_lockfile <- function(path="./renv.lock") {
 
   lockfile <- renv::lockfile_read(path)

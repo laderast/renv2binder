@@ -39,10 +39,10 @@ This is a basic example which shows you how to solve a common problem:
 ```r
 library(renv2binder)
 ## basic example code
-data(renv_lock)
+lockfile <- system.
 renv_to_install_r(renv_lock,file_out="./install.R")
 ```
 
 ```
-
+File is created as install.R
 ```
