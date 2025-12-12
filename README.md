@@ -33,13 +33,19 @@ pak::pak_install("laderast/renv2binder")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+If you have already initialized `renv` in your project, then you will
+have a `renv.lock` in the project folder.
+
+If not, and you’re not using `renv`, you can still use
+`renv::snapshot()` to create this file.
 
 ``` r
 library(renv2binder)
 ## basic example code
-lockfile <- system.
-renv_to_install_r(renv_lock,file_out="./install.R")
+## Run this in your project after using renv::snapshot()
+lockfile_path <- system.file("extdata", "renv.lock", package="renv2binder")
+lockfile <- load_renv_lockfile(lockfile_path)
+renv_to_install_r(lockfile,file_out="./install.R")
 ```
 
     File is created as install.R
